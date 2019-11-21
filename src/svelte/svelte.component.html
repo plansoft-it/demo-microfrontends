@@ -13,13 +13,13 @@
 import { showFrameworkObservable, getBorder } from 'src/common/colored-border.js';
 
 export default {
-  onrender () {
+  oncreate () {
     this.subscription = showFrameworkObservable.subscribe(
       newValue => this.set({frameworkInspector: newValue})
     );
   },
 
-  onteardown () {
+  ondestroy () {
     this.subscription.dispose();
   },
 
