@@ -1,6 +1,6 @@
 {
-  "name": "single-spa-examples",
-  "description": "This is an example of examples on how to use [single-spa](https://github.com/joeldenning/single-spa) in a variety of contexts. Right now there are examples with the following technologies:",
+  "name": "plansoft-micro-frontends",
+  "description": "demonstrative application on microfrontends for sharing cafe",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "rimraf build && yarn ember-install && yarn build-ember && yarn build-vanilla && yarn build-webpack",
@@ -9,16 +9,8 @@
     "build-ember": "cd src/ember-app && ember build --output-path ../../build/ember-app/ --environment production && cd ../..",
     "build-vanilla": "cpx \"src/vanillajs/**\" build/vanillajs && cpx \"node_modules/todomvc-app-css/*\" build/todomvc-app-css && cpx \"node_modules/todomvc-common/*\" build/todomvc-common"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joeldenning/single-spa-examples.git"
-  },
-  "author": "Joel Denning",
+  "author": "KernelPanic92",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/joeldenning/single-spa-examples/issues"
-  },
-  "homepage": "https://github.com/joeldenning/single-spa-examples#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
