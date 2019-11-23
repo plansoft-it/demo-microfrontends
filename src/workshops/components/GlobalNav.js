@@ -41,14 +41,12 @@ class GlobalNav extends Component {
     return (
       <div style={styles.wrapper}>
         <div style={{ float: 'left' }}>
-          <Link to="/react" style={styles.link}>Home</Link>{' '}
-      <Link to="/react/calendar" style={styles.link} activeStyle={styles.activeLink}>Calendar</Link>{' '}
-      <Link to="/react/grades" style={styles.link} activeStyle={styles.activeLink}>Grades</Link>{' '}
-      <Link to="/react/messages" style={styles.link} activeStyle={styles.activeLink}>Messages</Link>{' '}
+          <Link to="/workshops" style={styles.link}>Home</Link>{' '}
+      <Link to="/workshops/calendar" style={styles.link} activeStyle={styles.activeLink}>Calendar</Link>{' '}
+      <Link to="/workshops/grades" style={styles.link} activeStyle={styles.activeLink}>Grades</Link>{' '}
+      <Link to="/workshops/messages" style={styles.link} activeStyle={styles.activeLink}>Messages</Link>{' '}
         </div>
-        <div style={{ float: 'right' }}>
-      <Link style={styles.link} to="/react/profile">{user.name}</Link> <button onClick={this.logOut}>log out</button>
-        </div>
+
       </div>
     )
   }

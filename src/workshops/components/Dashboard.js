@@ -17,7 +17,7 @@ class Dashboard extends Component {
         <ul>
           {courses.map(course => (
             <li key={course.id}>
-        <Link to={`/react/course/${course.id}`}>{course.name}</Link>
+        <Link to={`/workshops/course/${course.id}`}>{course.name}</Link>
             </li>
           ))}
         </ul>

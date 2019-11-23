@@ -7,7 +7,7 @@ import './stubs/COURSES';
 
 const rootRoute = {
   childRoutes: [ {
-    path: 'react',
+    path: 'workshops',
     component: require('./components/App'),
     childRoutes: [
       require('./routes/Calendar'),
