@@ -36,10 +36,14 @@ module.exports = {
   },
   module: {
     rules: [
-      {
+			{
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
+			{
+				test: /\.s[ac]ss$/i,
+				use: ['style-loader', 'css-loader', 'sass-loader']
+			},
       {
         test: /inferno.+\.js$/,
         loader: 'babel-loader',
@@ -69,7 +73,17 @@ module.exports = {
       {
         test: /svelte.+\.html$/,
         loader: 'svelte-loader',
-      },
+      }, {
+				test: /\.(svg|eot|woff|ttf|svg|woff2)$/,
+				use: [
+						{
+								loader: 'file-loader',
+								options: {
+										name: "[path][name].[ext]"
+								}
+						}
+				]
+			}
     ],
   },
   plugins: [

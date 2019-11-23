@@ -2,6 +2,7 @@ import React from 'react';
 import Dialog from './dialog.component.js';
 import FrameworkInspector from './framework-inspector.component.js';
 import {getBorder, showFrameworkObservable} from 'src/common/colored-border.js';
+import './navbar.component.scss';
 
 export default class Navbar extends React.Component {
   constructor() {
@@ -17,17 +18,11 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div>
-        {this.state.frameworkInspector &&
-          <div style={{position: 'fixed', top: 0, left: 0, zIndex: 10000}}>
-            (built with React)
-          </div>
-        }
-        <div className="navbar-fixed">
+        <div className="navbar-fixed ">
           <nav>
-            <div className="nav-wrapper">
+            <div className="nav-wrapper ">
               <a className="brand-logo activator" href="#">
-                <i />
-                single-spa-examples
+                <img src="images/plansoft-logo.png" />
               </a>
               <a href="#" data-activates="mobile-demo" className="button-collapse">
                 <i className="material-icons">
@@ -58,7 +53,7 @@ function menuItems() {
     <div>
       <FrameworkInspector />
       <li>
-        <a onClick={() => this.navigateTo("/")}>
+        <a onClick={() => this.navigateTo("/")} className="blue-text">
           Home
         </a>
       </li>
