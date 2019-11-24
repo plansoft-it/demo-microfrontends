@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.component.scss';
+import {navigateToUrl} from 'single-spa';
 
 export default class Navbar extends React.Component {
   constructor() {
@@ -18,7 +19,7 @@ export default class Navbar extends React.Component {
           <nav>
             <div className="nav-wrapper ">
               <a className="brand-logo activator" onClick={() => this.navigateTo("/")}>
-                <img src="images/plansoft-logo.png" />
+                <img src={`${window.location.origin}/images/plansoft-logo.png`} />
               </a>
               <a href="#" data-activates="mobile-demo" className="button-collapse">
                 <i className="material-icons">
@@ -37,66 +38,63 @@ export default class Navbar extends React.Component {
       </div>
     );
   }
-
-
-  navigateTo = url => window.history.pushState(null, null, url)
 }
 
 function menuItems() {
   return (
     <div>
       <li>
-        <a onClick={() => this.navigateTo("/")} className="blue-text">
+        <a href="/" className="blue-text">
           Home
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/workshops")}>
+        <a href="/workshops">
           Workshops
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/angularjs")}>
+        <a href="/angularjs">
           AngularJS
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/angular")}>
+        <a href="/angular">
           Angular
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/vue")}>
+        <a href="/vue">
           Vue.js
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/svelte")}>
+        <a href="/svelte">
           Svelte
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/cyclejs")}>
+        <a href="/cyclejs">
           CycleJS
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/preact")}>
+        <a href="/preact">
           Preact
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/vanilla")}>
+        <a href="/vanilla">
           Vanilla
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/inferno")}>
+        <a href="/inferno">
           Inferno
         </a>
       </li>
       <li>
-        <a onClick={() => this.navigateTo("/ember")}>
+        <a href="/ember">
           Ember
         </a>
       </li>

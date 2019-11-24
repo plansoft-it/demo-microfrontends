@@ -1,8 +1,8 @@
 module.exports = {
-  path: ':assignmentId',
+  path: 'workshop/:workshopTitle',
   getComponent(nextState, cb) {
     require.ensure([], (require) => {
-      cb(null, require('./components/Assignment'))
+      cb(null, require('./components/workshop-detail'))
     })
   }
 }
