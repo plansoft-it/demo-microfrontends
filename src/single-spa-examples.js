@@ -1,6 +1,7 @@
 import {registerApplication, start} from 'single-spa';
 import {loadEmberApp} from 'single-spa-ember';
 import 'babel-polyfill';
+import './../node_modules/materialize-css/dist/js/materialize';
 
 registerApplication('navbar', () => import('./navbar/navbar.app.js'), () => true);
 registerApplication('home', () => import('./home/home.app.js'), () => location.pathname === "" || location.pathname === "/");

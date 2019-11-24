@@ -32,8 +32,9 @@ module.exports = {
     ],
     alias: {
       'single-spa': path.resolve(__dirname, 'node_modules/single-spa/lib/single-spa.js'),
-    },
-  },
+		},
+		extensions: [".ts", ".tsx", ".js", ".jsx", ".json"]
+	},
   module: {
     rules: [
 			{
@@ -85,11 +86,12 @@ module.exports = {
 				]
 			}
     ],
-  },
+	},
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: 'common',
-      minChunks: module => module.context && module.context.indexOf('node_modules') !== -1
+			minChunks: module => module.context && module.context.indexOf('node_modules') !== -1,
+			
     }),
     new webpack.ContextReplacementPlugin(/\@angular(\\|\/)core(\\|\/)esm5/, path.join(__dirname, './src')),
   ],

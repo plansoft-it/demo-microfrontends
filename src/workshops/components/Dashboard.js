@@ -1,29 +1,47 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 
+
 class Dashboard extends Component {
   render() {
-    const { courses } = this.props
+    const { workshops } = this.props
 
     return (
       <div>
-        <h2>React + react-router</h2>
-        <p>
-          This is the react-router <a href="https://github.com/ReactTraining/react-router/tree/1.0.x/examples/huge-apps" target="_blank">huge-apps example</a>,
-          converted into a single-spa application. Note that the entire application is lazy loaded (single-spa's does this)
-      and that each of the individual react-router routes is lazy loaded (react-router's does this).
+			
+        <h2 className="row center">Workshops</h2>
+        <p className="row center">
+          I workshops attualmente programmati da Plansoft
         </p>
-        <h2>Courses</h2>{' '}
-        <ul>
-          {courses.map(course => (
-            <li key={course.id}>
-        <Link to={`/workshops/course/${course.id}`}>{course.name}</Link>
-            </li>
-          ))}
-        </ul>
+     
+			<div className="row">
+				{workshops.map(this.renderWorkshop)}
+			</div>
+		
       </div>
     )
-  }
+	}
+	
+	renderWorkshop(workshop) {
+		return (
+			<div className="col s12 m6 offset-m3" key={workshop.title}>
+			<div className="card horizontal">
+				<div className="card-image">
+					<img src={workshop.img} style={{width: 300, height: 300, objectFit: 'contain', display: 'block', padding: 20}}/>
+				</div>
+				<div className="card-stacked">
+					<div className="card-content">
+						<span className="card-title">{workshop.title}</span>
+						<p>{workshop.description}</p>
+					</div>
+					<div className="card-action">
+						<a href="#" className="right">Vai al dettaglio</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		);
+	}
 }
 
 export default Dashboard
