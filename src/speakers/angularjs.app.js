@@ -6,10 +6,9 @@ import angular from 'angular';
  * is something caused by angularjs's dependency injection layer that was invented before
  * es6 import statements.
  */
-import './app.module.js';
-import './routes.js';
+import './app.module';
 
-const domElementGetter = () => document.getElementById('angularjs');
+const domElementGetter = () => document.getElementById('speakers');
 
 const angularLifecycles = singleSpaAngularJS({
   angular,

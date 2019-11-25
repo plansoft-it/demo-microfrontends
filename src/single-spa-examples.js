@@ -1,11 +1,10 @@
 import {registerApplication, start} from 'single-spa';
 import {loadEmberApp} from 'single-spa-ember';
 import 'babel-polyfill';
-import './../node_modules/materialize-css/dist/js/materialize';
 
 registerApplication('navbar', () => import('./navbar/navbar.app.js'), () => true);
 registerApplication('home', () => import('./home/home.app.js'), () => location.pathname === "" || location.pathname === "/");
-registerApplication('angularjs', () => import('./angularjs/angularjs.app.js'), pathPrefix('/angularjs'));
+registerApplication('speakers', () => import('./speakers/angularjs.app.js'), pathPrefix('/speakers'));
 registerApplication('workshops', () => import('./workshops/workshops.app.js'), pathPrefix('/workshops'));
 registerApplication('angular', () => import('./angular/angular.app.js'), pathPrefix('/angular'));
 registerApplication('vue', () => import('src/vue/vue.app.js'), pathPrefix('/vue'));

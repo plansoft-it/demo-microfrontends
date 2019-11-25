@@ -1,6 +1,5 @@
 import React from 'react';
 import './navbar.component.scss';
-import {navigateToUrl} from 'single-spa';
 
 export default class Navbar extends React.Component {
   constructor() {
@@ -54,8 +53,8 @@ function menuItems() {
         </a>
       </li>
       <li>
-        <a href="/angularjs">
-          AngularJS
+        <a href="/speakers">
+          Relatori
         </a>
       </li>
       <li>

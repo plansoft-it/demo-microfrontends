@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row">
+		<h2 class="header center">Relatori</h2>
+	</div>
+	
+	<div class="row speaker" ng-repeat="speaker in $ctrl.speakerList">
+		<div class="col s4 m2 offset-m3">
+				<img src="{{speaker.img}}" class="circle responsive-img" alt="{{speaker.completeName}} profile picture">
+		</div>
+		<div class="col s8 m4">
+				<h3>{{speaker.completeName}}</h3>
+				<div class="github-link"><img class="github-image" src="{{$ctrl.gitHubImageSrc}}" alt="github logo" /> <a href="{{speaker.githubUrl}}">{{speaker.githubNick}}</a></div>
+		</div>
+	</div>
+</div>

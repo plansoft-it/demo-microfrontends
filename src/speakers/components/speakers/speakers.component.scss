@@ -1,0 +1,14 @@
+.speaker {
+	margin-top: 80px;
+	.github-link {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		font-size: 18px;
+		.github-image {
+			width: 30px;
+			margin-right: 10px;
+		}
+	}
+
+}
