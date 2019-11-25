@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
-import navbar from './navbar.component.js';
+import navbar from './components/navbar/navbar.component';
 
 /* The navbar app is an app that is always active and is responsible for showing the top navbar.
  * It is written in React and does not even use a router like react-router since it doesn't really
