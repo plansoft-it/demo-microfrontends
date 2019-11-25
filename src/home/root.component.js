@@ -14,7 +14,7 @@ export default class HomeRoot extends React.Component {
 					</h4>
 					<img src="images/bricks.jpg" className="responsive-img" />
 					<p className="caption">
-						Progetto sviluppato con single- spa, per ulteriori informazioni visitate la <a href="https://github.com/CanopyTax/single-spa" target="_blank">pagina Github</a>.
+						Progetto sviluppato con single-spa, per ulteriori informazioni visitate la <a href="https://github.com/CanopyTax/single-spa" target="_blank">pagina Github</a>.
 						
 					</p>
 				</div>
