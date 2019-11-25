@@ -1,11 +1,11 @@
 import * as angular from 'angular';
 import 'angular-ui-router';
-import { SpeakersComponent } from './components/speakers/speakers.component';
+import { SpeakerComponent } from './components/speakers/speakers.component';
 import { routes } from './routes';
 
 angular
 .module('single-spa-app', ['ui.router'])
-.component('speakers', new SpeakersComponent())
+.component('speakers', SpeakerComponent)
 .config(($stateProvider, $locationProvider) => {
 
   $locationProvider.html5Mode({

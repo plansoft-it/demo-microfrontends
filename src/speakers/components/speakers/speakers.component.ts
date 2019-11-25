@@ -12,24 +12,15 @@ export class SpeakersController implements IComponentController {
 	private speakerList: ISpeaker[];
 	private gitHubImageSrc: string;
 
-	constructor() {
+	$onInit(): void {
 		this.speakerList = speakerListMock;
-
 		this.gitHubImageSrc =`${window.location.origin}/images/GitHub-Mark-32px.png`;
 	}
 
-	$onInit(): void {
-		
-	}
 }
 
-export class SpeakersComponent implements IComponentOptions {
-	public controller: Injectable<ng.IControllerConstructor>;
-	public controllerAs: string;
-	public template: string;
-	constructor() {
-		this.controller = SpeakersController;
-		this.controllerAs = "$ctrl";
-		this.template = html;
-	}
-}
+export const SpeakerComponent: IComponentOptions = {
+	controller: SpeakersController,
+	controllerAs: '$ctrl',
+	template: html
+};
