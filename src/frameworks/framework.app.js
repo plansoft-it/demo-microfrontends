@@ -6,7 +6,7 @@ import {showFrameworkObservable, getBorder} from 'src/common/colored-border.js';
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
-    el: '#vue-app',
+    el: '#frameworks',
     template: `
       <div id="vue-app">
         <div v-bind:style="{border: border}">
