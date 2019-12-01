@@ -72,6 +72,7 @@
     "single-spa-angular": "^2.0.0",
     "single-spa-angularjs": "^3.0.1",
     "single-spa-ember": "^0.2.0",
+    "single-spa-html": "^1.1.1",
     "single-spa-inferno": "^1.0.1",
     "single-spa-preact": "^1.0.1",
     "single-spa-react": "^2.2.0",

@@ -6,7 +6,6 @@ registerApplication('home', () => import('./home/home.app.js'), () => location.p
 registerApplication('speakers', () => import('./speakers/speakers.app.js'), pathPrefix('/speakers'));
 registerApplication('workshops', () => import('./workshops/workshops.app.js'), pathPrefix('/workshops'));
 registerApplication('frameworks', () => import('./frameworks/framework.app.js'), pathPrefix('/frameworks'));
-registerApplication('iframe-vanilla-js', () => import('src/vanillajs/vanilla.app.js'), pathPrefix('/vanilla'));
 
 start();
 
