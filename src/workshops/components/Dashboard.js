@@ -27,7 +27,7 @@ class Dashboard extends Component {
 
 	renderWorkshop(workshop) {
 		return (
-			<div className="col s12 m6 offset-m3" key={workshop.title}>
+		<div className="col s12 m6 offset-m3" key={workshop.title}>
 			<div className="card horizontal">
 				<div className="card-image">
 					<img src={`${window.location.origin}/${workshop.img}`} style={{width: 300, height: 300, objectFit: 'contain', display: 'block', padding: 20}}/>

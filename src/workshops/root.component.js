@@ -15,9 +15,6 @@ const rootRoute = {
 export default class Root extends React.Component {
   constructor() {
     super();
-    this.state = {
-      frameworkInspector: false,
-    };
   }
  
   render() {
