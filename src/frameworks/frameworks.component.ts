@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import './demo-grid.styles.scss';
+import './frameworks.component.scss';
 import { frameworkListMock } from './mocks/framework-list.mock';
 
 export const FrameworksComponent = {
@@ -17,6 +17,7 @@ export const FrameworksComponent = {
 						</div>
 						<div class="card-content">
 								<span class="card-title">{{ framework.name }}</span>
+								<p>{{ framework.description }}</p>
 						</div>
 					</div>
 				</div>
