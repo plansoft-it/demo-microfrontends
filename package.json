@@ -3,11 +3,8 @@
   "description": "demonstrative application on microfrontends for sharing cafe",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "rimraf build && yarn ember-install && yarn build-ember && yarn build-vanilla && yarn build-webpack",
-    "ember-install": "cd src/ember-app && yarn && cd ../..",
-    "build-webpack": "webpack --config webpack.config.js",
-    "build-ember": "cd src/ember-app && ember build --output-path ../../build/ember-app/ --environment production && cd ../..",
-    "build-vanilla": "cpx \"src/vanillajs/**\" build/vanillajs && cpx \"node_modules/todomvc-app-css/*\" build/todomvc-app-css && cpx \"node_modules/todomvc-common/*\" build/todomvc-common"
+    "build": "rimraf build && yarn build-webpack",
+    "build-webpack": "webpack --config webpack.config.js"
   },
   "author": "KernelPanic92",
   "license": "Apache-2.0",
