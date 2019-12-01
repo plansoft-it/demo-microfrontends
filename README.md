@@ -1,3 +1,6 @@
+
+![](https://raw.githubusercontent.com/KernelPanic92/demo-microfrontends/master/images/plansoft-logo.png?raw=true)
+
 # Demo microfrontends
 
 Example app for the presentation of microfrontends in plansoft
