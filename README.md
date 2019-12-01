@@ -1,5 +1,5 @@
 
-![](https://raw.githubusercontent.com/KernelPanic92/demo-microfrontends/master/images/plansoft-logo.png?raw=true)
+![](https://raw.githubusercontent.com/KernelPanic92/demo-microfrontends/master/images/bricks.jpeg?raw=true)
 
 # Demo microfrontends
 
