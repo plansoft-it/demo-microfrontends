@@ -1,5 +1,5 @@
 
-![](https://raw.githubusercontent.com/KernelPanic92/demo-microfrontends/master/images/bricks.jpeg?raw=true)
+![](https://raw.githubusercontent.com/KernelPanic92/demo-microfrontends/master/images/bricks.jpg?raw=true)
 
 # Demo microfrontends
 
