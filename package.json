@@ -3,8 +3,7 @@
   "description": "demonstrative application on microfrontends for sharing cafe",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "rimraf build && yarn build-webpack",
-    "build-webpack": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js"
   },
   "author": "KernelPanic92",
   "license": "Apache-2.0",
